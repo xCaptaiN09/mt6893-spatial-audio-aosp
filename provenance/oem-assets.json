@@ -1,0 +1,14 @@
+{
+  "system/vendor/etc/spatial/HP_MOVIE_ANALOG.bin": "c92a00e87b4e58786aefde953ca9a5643b0207b190126ad82fd3a2a85dce5c79",
+  "system/vendor/etc/spatial/HP_MOVIE_BLUETOOTH.bin": "e755958fdd770cf4368e0e7d2ad31265d8d107786d6798b4c0cfbac5dba2cf18",
+  "system/vendor/etc/spatial/HP_MOVIE_DIGITAL.bin": "c92a00e87b4e58786aefde953ca9a5643b0207b190126ad82fd3a2a85dce5c79",
+  "system/vendor/etc/spatial/HP_MOVIE_GALILEO.bin": "e755958fdd770cf4368e0e7d2ad31265d8d107786d6798b4c0cfbac5dba2cf18",
+  "system/vendor/etc/spatial/HP_MUSIC_ANALOG.bin": "2764359e8935703880936371208b1235ebab48762fa35917960ab13d30563f6a",
+  "system/vendor/etc/spatial/HP_MUSIC_BLUETOOTH.bin": "4b45d1abfe61cfc6f249cd81c6d238f0ee4876d49de15a0307c8056530c7c54c",
+  "system/vendor/etc/spatial/HP_MUSIC_DIGITAL.bin": "b585e81f4125af94026706789d72bc7721c08e93658fa561431584a2f7fffa7a",
+  "system/vendor/etc/spatial/HP_MUSIC_GALILEO.bin": "b7790e9bb7e0d849f4ff2467c8a951696433d07099e246988b7992320d873572",
+  "system/vendor/lib/liboplus_spat_audiox.so": "b4842fad2a432ffcddd2f4ed2827a2e53799b4bfce5e38b58489c7b6ea5924ae",
+  "system/vendor/lib/libspcxxrt.so": "e5de7f0c7e44c3d8547a585fcf7de29aca77f02163d15641d32e3d35047064b9",
+  "system/vendor/lib/libspstdc.so": "8ef9c073d7c3df43f1c4690524910d000595ff51e64bdf40a42421a1b8a86943",
+  "system/vendor/lib/soundfx/liboplus_spatializer.so": "914ffcb78363c1470ce16096448cd85abe12835a8bf6aa0e63eb5879fcce378d"
+}

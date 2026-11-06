@@ -1,0 +1,29 @@
+{
+  "java": {
+    "SpatialControl": {
+      "binary": "control.jar",
+      "sha256": "46dac77f3e60d72391bb7c923c1e40756cf2c096a24b7e0ee6cdf06a84fa0543",
+      "source": "src/java/SpatialControl.java",
+      "source_sha256": "42218fd6a838b87f249eacbf42fc3882ee8b0ee7d622a8865490eead30f65b6a"
+    },
+    "SpatialPlaybackProbe": {
+      "binary": "demo.jar",
+      "sha256": "16255b82d018447a946f730c5e5f16a802458bff98d075b334531c64685535da",
+      "source": "src/java/SpatialPlaybackProbe.java",
+      "source_sha256": "30a2b8e85e30ed21585d24f4c56b29b08bbda121e2bad2be740ce336ad30053a"
+    }
+  },
+  "native": {
+    "binary": "system/vendor/lib/soundfx/libmt6893spatial.so",
+    "compiler": "Zig 0.14.1; arm-linux-android; ARMv7 softfp",
+    "sha256": "363367a4a85a75f973a06a3488114c07e160203fdc62e28f0ec4d00fea33c547",
+    "sources": {
+      "src/native/link-stubs/android_public_stubs.c": "e9ae8dcdb3876aeb81ff15a9359299fed8aed201d3944a9e6beddc75a39904d7",
+      "src/native/link-stubs/libc.map": "f51787751c9525687c8458f9694e1be5dd797aaf1eeb59451dee7348353e74d9",
+      "src/native/link-stubs/libdl.map": "5ae62529cbfd46e71e7eb071c3e792f311763478d0bdcceedc7646faac2b091a",
+      "src/native/spatial_buffer.exports": "239097ba21bc9de9db71e613e079e8605494e6b2d4355cba7db0c315f9d8e917",
+      "src/native/spatial_compat.c": "b0a97041554d76814b24b2b161311fde968165aed3e60d20cf498ec2e2b971c2",
+      "src/native/spatial_effect_abi.h": "b939be0ddd5541950cb6ece778df33ccc5d7018baad0459311a5fc9d727a3c75"
+    }
+  }
+}

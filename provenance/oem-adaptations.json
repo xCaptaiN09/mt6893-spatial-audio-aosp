@@ -1,0 +1,74 @@
+{
+  "cxx_name_edits": [
+    {
+      "file": "runtime",
+      "offset": 39323,
+      "old": "libc++_shared.so",
+      "new": "libspcxxrt.so"
+    },
+    {
+      "file": "plugin",
+      "offset": 2480,
+      "old": "libc++_shared.so",
+      "new": "libspcxxrt.so"
+    },
+    {
+      "file": "runtime",
+      "offset": 179056,
+      "purpose": "Update the base version definition hash for the renamed SONAME."
+    }
+  ],
+  "engine_profile_path_edits": [
+    {
+      "offset": 684199,
+      "old": "/odm/etc/spatializer/HP_MOVIE_ANALOG.bin",
+      "new": "/vendor/etc/spatial/HP_MOVIE_ANALOG.bin"
+    },
+    {
+      "offset": 682713,
+      "old": "/odm/etc/spatializer/HP_MOVIE_BLUETOOTH.bin",
+      "new": "/vendor/etc/spatial/HP_MOVIE_BLUETOOTH.bin"
+    },
+    {
+      "offset": 683049,
+      "old": "/odm/etc/spatializer/HP_MOVIE_DIGITAL.bin",
+      "new": "/vendor/etc/spatial/HP_MOVIE_DIGITAL.bin"
+    },
+    {
+      "offset": 689601,
+      "old": "/odm/etc/spatializer/HP_MOVIE_GALILEO.bin",
+      "new": "/vendor/etc/spatial/HP_MOVIE_GALILEO.bin"
+    },
+    {
+      "offset": 682672,
+      "old": "/odm/etc/spatializer/HP_MUSIC_ANALOG.bin",
+      "new": "/vendor/etc/spatial/HP_MUSIC_ANALOG.bin"
+    },
+    {
+      "offset": 687172,
+      "old": "/odm/etc/spatializer/HP_MUSIC_BLUETOOTH.bin",
+      "new": "/vendor/etc/spatial/HP_MUSIC_BLUETOOTH.bin"
+    },
+    {
+      "offset": 684951,
+      "old": "/odm/etc/spatializer/HP_MUSIC_DIGITAL.bin",
+      "new": "/vendor/etc/spatial/HP_MUSIC_DIGITAL.bin"
+    },
+    {
+      "offset": 683609,
+      "old": "/odm/etc/spatializer/HP_MUSIC_GALILEO.bin",
+      "new": "/vendor/etc/spatial/HP_MUSIC_GALILEO.bin"
+    }
+  ],
+  "runtime_input_sha256": "7414fcc45661921e4ccf2082a796e048dddb0811780c671e4e2790131c22ef67",
+  "plugin_input_sha256": "a048c6979fe6a7db56790f504a08489c6b32c9ad9c9c232ab0ddbbcba5ac0b2c",
+  "engine_input_sha256": "e53b83bd9ad87b5d2383a8dc81edad39a8704b5973c5c1074e3e7b1af8f763d5",
+  "processing_instructions_changed": false,
+  "sources": {
+    "release_repository": "https://github.com/xCaptaiN09/mt6893-spatial-audio",
+    "release_commit": "5b6d7fb4f31e8946767e0b732be689acf56f4071",
+    "donor_repository": "https://github.com/Jiovanni-dump/oneplus_op5d35l1_dump",
+    "donor_commit": "6c4375b5d3fab596f1ad3f42d92162de7fddf95e",
+    "donor_runtime": "odm/lib/libc++_shared.so"
+  }
+}

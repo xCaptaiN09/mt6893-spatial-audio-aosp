@@ -1,0 +1,7 @@
+207ffcbe7090eedf071ab4907d1190e25073f154609c9de05a5b64ac590b1063  /vendor/bin/hw/android.hardware.audio.service
+dd7b4d8ea2c43012f23f12a1c16b135b16fdf4f54ce93dc01451aecbbb3c3dbe  /vendor/etc/audio_effects.xml
+e58449f40d072c85868ffb0dedd32dd5da8e753da4000a95e41d74d1a33df277  /vendor/etc/audio_policy_configuration.xml
+b8cd231cffb41fdf1e62da0b38fa61e94633094eb71859680ba3b469d3910a40  /vendor/etc/audio_policy_configuration_a2dp_offload_disabled.xml
+342d4fa225dc9ec71fa6d66f256012867f07e96fbd06d9380bcdae9d2c161b25  /vendor/lib/hw/audio.primary.mt6893.so
+4cf3104139bc88095c87894cd4e6f734795a3c33ec9c5b511efb7dda174bfcba  /vendor/lib/libc++.so
+6592fd686944b9155e2302c528acea1290eac6f98493dbe4d82de2c489f95a3e  /vendor/lib/libutils.so

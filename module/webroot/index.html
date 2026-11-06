@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data:; script-src 'self'; style-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'">
+  <meta name="theme-color" content="#050508">
+  <title>Spatial Audio</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <div class="eyebrow">MT6893 <span> / </span> AOSP <span class="preview">Preview</span></div>
+        <h1>Spatial<br><span>Audio.</span></h1>
+      </div>
+      <button class="icon-button" id="refresh" aria-label="Refresh audio status"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5M6.2 7a7 7 0 0 1 11.5-1L20 9M4 15l2.3 3A7 7 0 0 0 17.8 17"/></svg></button>
+    </header>
+    <section class="device" aria-label="Connected headphones">
+      <span class="device-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 14v-3a8 8 0 0 1 16 0v3M4 12h2a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2Zm16 0h-2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Z"/></svg></span>
+      <div class="device-copy"><span class="label">YOUR HEADPHONES</span><strong id="device">Checking connection…</strong></div>
+      <span class="connection-dot" id="dot" aria-hidden="true"></span>
+    </section>
+    <section class="soundstage" id="stage" aria-label="Spatial Audio status">
+      <div class="status" aria-live="polite"><span id="status-dot"></span><span id="status">Reading audio state…</span></div>
+      <div class="orb" aria-hidden="true">
+        <div class="orb-halo"></div><div class="orb-ring ring-blur"></div><div class="orb-ring ring-edge"></div>
+        <div class="orb-center"><svg viewBox="0 0 48 48"><path d="M10 28v-8a14 14 0 0 1 28 0v8"/><rect x="7" y="24" width="9" height="16" rx="4.5"/><rect x="32" y="24" width="9" height="16" rx="4.5"/></svg></div>
+      </div>
+      <div class="stage-caption"><span class="label">FIXED SOUNDSTAGE</span><h2>A little more space.</h2><p id="stage-copy">Checking the audio engine.</p></div>
+    </section>
+    <div class="segmented" role="group" aria-label="Sound processing">
+      <button id="original" aria-pressed="false" disabled>Original</button><button id="spatial" aria-pressed="false" disabled>Spatial Audio</button>
+    </div>
+    <div class="mode-grid">
+      <section class="mode fixed"><span class="mode-symbol" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/></svg></span><div><strong>Fixed</strong><p>A soundstage that stays in place.</p></div></section>
+      <section class="mode tracking"><span class="mode-symbol" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18.5 6.5a8 8 0 1 1-6-2.5M9 2l4 2-4 3"/></svg></span><div><strong>Head tracking</strong><p id="tracking-copy">Requires compatible tracking hardware.</p></div></section>
+    </div>
+    <section class="actions" aria-label="Audio tools">
+      <button id="demo" class="demo" disabled><span class="play-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m9 6 9 6-9 6Z"/></svg></span><span class="demo-copy"><strong>Channel demo</strong><small>24 seconds · keep the volume low</small></span><span class="duration" aria-hidden="true">0:24</span></button>
+      <div class="utility-tools">
+        <button id="report"><span>Save diagnostic report</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 15v5h14v-5"/></svg></button>
+        <button id="settings"><span>System sound settings</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></button>
+      </div>
+    </section>
+    <div class="feedback" id="feedback" role="status" hidden></div>
+    <footer><span class="tuning-mark" aria-hidden="true">✳</span><span>Original headphone tuning</span></footer>
+    <p class="footnote">Availability depends on your headphones and audio. The animation is decorative.</p>
+    <p class="author-credit">xCaptaiN09</p>
+  </main>
+</body>
+</html>

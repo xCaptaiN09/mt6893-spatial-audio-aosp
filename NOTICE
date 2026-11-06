@@ -1,0 +1,28 @@
+MT6893 Spatial Audio AOSP
+Maintainer: Muhammed Dilshad A. (xCaptaiN09)
+
+Project-authored code and documentation are covered by LICENSE (MIT).
+That license does not cover the following third-party assets:
+
+- module/system/vendor/lib/liboplus_spat_audiox.so
+- module/system/vendor/lib/libspstdc.so
+- module/system/vendor/lib/soundfx/liboplus_spatializer.so
+- module/system/vendor/etc/spatial/HP_*.bin
+- captured/derived OEM effect and audio-policy XML files in module/system/vendor/etc/
+- the donor C++ runtime, module/system/vendor/lib/libspcxxrt.so
+
+Oplus/OnePlus and other upstream owners retain their rights to OEM materials.
+No OEM redistribution license is asserted or granted by this project's MIT license.
+Pinned source locations, input/output hashes and byte adaptations are recorded in
+THIRD_PARTY.md and provenance/. The OEM DSP instructions and eight HP profiles
+are retained unchanged; dependency names and profile-file paths are adapted.
+
+The donor runtime identifies an LLVM 8-based Android toolchain. Upstream LLVM 8
+libc++ and libc++abi notices are retained under licenses/. These upstream notices
+do not relicense OEM additions or establish a separate OEM redistribution grant.
+
+The Android effect-ABI declarations follow AOSP reference interfaces; retain
+licenses/Apache-2.0.txt. Zig-generated adapter code retains licenses/Zig-MIT.txt.
+
+KernelSU, KernelSU-Next and Magic Mount-rs are external dependencies. Their code,
+installers, kernels and applications are not bundled by this release.

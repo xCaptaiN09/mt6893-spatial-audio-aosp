@@ -1,0 +1,31 @@
+MT6893 Spatial Audio AOSP - v0.1.3-preview
+Maintainer: xCaptaiN09
+
+Experimental preview for the inspected Realme X7 Max RMX3031 Evolution X
+Android 17 12.3 audio build only. SDK 37 and exact audio-build checks apply.
+
+Install the module ZIP through KernelSU/KernelSU-Next with a working file-mounting
+provider. Magic Mount-rs v4.1.12-959 is the provider used on the test phone.
+Reboot, connect wired/USB headphones and open WebUI. Use a low media volume.
+Original / Spatial Audio uses Android's native enabled state. The confirmed
+selection is saved and restored once at boot. The glow ring is decorative.
+
+The module ID remains mt6893-spatial-aosp. Install over the existing private
+preview; do not stack another Spatializer module. The installer retains your
+saved selection and accepts only captured/new/pinned prior audio files.
+
+KNOWN ISSUES: YouTube test-video LFE rumble remains absent; Surround Sound Test
+can crackle after short channel clips. Neither is declared fixed here.
+Other ROM/device builds, Bluetooth playback and head tracking are not validated.
+
+The 24-second channel demo exports no automatic report. Save diagnostic report
+or the root manager's Action button exports a report only when requested.
+No ColorOS USB Audio Fix is included; USB playback must already work on the ROM.
+No primary audio HAL, framework binary or SELinux policy is replaced.
+
+If audio or routing fails, select Original, or disable the module and reboot.
+Remove through your root manager and reboot to uninstall.
+
+README, source, notices, compatibility notes and current releases:
+https://github.com/xCaptaiN09/mt6893-spatial-audio-aosp
+MIT covers project-authored code only. See LICENSE, NOTICE and THIRD_PARTY.md.

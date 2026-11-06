@@ -1,0 +1,27 @@
+MT6893 Spatial Audio AOSP v0.1.3-preview
+Maintainer: Muhammed Dilshad A. / xCaptaiN09
+Project: https://github.com/xCaptaiN09/mt6893-spatial-audio-aosp
+
+Original Spatial Audio release:
+https://github.com/xCaptaiN09/mt6893-spatial-audio
+Commit: 5b6d7fb4f31e8946767e0b732be689acf56f4071
+Donor runtime/OEM provenance:
+https://github.com/Jiovanni-dump/oneplus_op5d35l1_dump
+Commit: 6c4375b5d3fab596f1ad3f42d92162de7fddf95e
+Runtime input: odm/lib/libc++_shared.so
+
+Original OEM processing instructions and eight HP profiles are retained.
+Private runtime/dependency names and profile-file paths are adapted.
+The project-authored libmt6893spatial.so adapter initializes the OEM channel count
+and translates confirmed stereo metadata in the inspected 12-channel mixer.
+No PCM samples, radius, profile angles, primary HAL or framework binary are patched.
+Project native/Java sources and exact source/hash records are in the repository.
+
+AOSP Spatializer parameter contract:
+https://android.googlesource.com/platform/system/media/+/refs/heads/master/audio/include/system/audio_effects/effect_spatializer.h
+AOSP metadata sender:
+https://android.googlesource.com/platform/frameworks/av/+/master/services/audioflinger/Effects.cpp
+Android Spatializer API:
+https://developer.android.com/reference/android/media/Spatializer
+
+See THIRD_PARTY.md, NOTICE, licenses/ and BUILD-INFO.json.

@@ -1,0 +1,4 @@
+LIBC {
+    global: puts; fflush; printf; snprintf; calloc; free; pthread_once; fopen; fread; fwrite; fclose;
+    local: *;
+};

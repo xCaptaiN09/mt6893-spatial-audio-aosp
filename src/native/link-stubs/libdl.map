@@ -1,0 +1,4 @@
+LIBC {
+    global: dlopen; dlsym; dlerror;
+    local: *;
+};
