@@ -6,15 +6,21 @@ ui_print "AOSP Android 16/17 — RMX3031 (MT6893)"
 ui_print " "
 MODDIR=$MODPATH
 . "$MODDIR/common.sh"
-case "$(getprop ro.build.version.sdk)" in
+sdk=$(getprop ro.build.version.sdk)
+case "$sdk" in
     36|37) ;;
-    *) abort "Expected Android SDK 36 or 37.";;
+    *) abort "Expected Android SDK 36 or 37, found: ${sdk:-empty}";;
 esac
-[ "$(getprop ro.board.platform)" = mt6893 ] || abort "Expected MT6893."
+board=$(getprop ro.board.platform)
+[ "$board" = mt6893 ] || abort "Expected board mt6893, found: ${board:-empty}"
 for legacy in mt6893-spatial-audio mt6893-spatializer-test; do
     [ ! -f "/data/adb/modules/$legacy/module.prop" ] || abort "Remove the ColorOS Spatial Audio module and reboot first."
 done
 ui_print "[1/3] Checking the inspected audio build"
+audio_service=/proc/1/root/vendor/bin/hw/android.hardware.audio.service
+ui_print "Audio service ELF header (5th byte 01 = 32-bit, 02 = 64-bit):"
+ui_print "  $(od -An -tx1 -N5 "$audio_service" 2>/dev/null)"
+mismatch=""
 while read -r expected target; do
     actual=$(file_sha "/proc/1/root$target")
     modified=$(awk -v p="$target" '$2==p {print $1;exit}' "$MODDIR/LIVE-SHA256SUMS")
@@ -22,9 +28,12 @@ while read -r expected target; do
     if [ "$actual" != "$expected" ] &&
        { [ -z "$modified" ] || [ "$actual" != "$modified" ]; } &&
        { [ -z "$previous" ] || [ "$actual" != "$previous" ]; }; then
-        abort "Audio file differs from the reviewed build: $target"
+        ui_print "DIFF: $target"
+        ui_print "  found: ${actual:-missing}"
+        mismatch=1
     fi
 done < "$MODDIR/BASE-SHA256SUMS"
+[ -z "$mismatch" ] || abort "Audio files differ from the reviewed build (listed above)."
 active_policy=$(timeout 10 dumpsys media.audio_policy 2>/dev/null | sed -n 's/^[[:space:]]*Config source: //p')
 case "$active_policy" in
     /vendor/etc/audio_policy_configuration.xml|/vendor/etc/audio_policy_configuration_a2dp_offload_disabled.xml) ;;
