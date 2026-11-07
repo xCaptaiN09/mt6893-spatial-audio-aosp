@@ -2,11 +2,14 @@
 ui_print " "
 package_version=$(sed -n 's/^version=//p' "$MODPATH/module.prop")
 ui_print "MT6893 Spatial Audio AOSP | $package_version"
-ui_print "Evolution X Android 17 — inspected RMX3031 build"
+ui_print "AOSP Android 16/17 — RMX3031 (MT6893)"
 ui_print " "
 MODDIR=$MODPATH
 . "$MODDIR/common.sh"
-[ "$(getprop ro.build.version.sdk)" = 37 ] || abort "Expected Android SDK 37."
+case "$(getprop ro.build.version.sdk)" in
+    36|37) ;;
+    *) abort "Expected Android SDK 36 or 37.";;
+esac
 [ "$(getprop ro.board.platform)" = mt6893 ] || abort "Expected MT6893."
 for legacy in mt6893-spatial-audio mt6893-spatializer-test; do
     [ ! -f "/data/adb/modules/$legacy/module.prop" ] || abort "Remove the ColorOS Spatial Audio module and reboot first."
