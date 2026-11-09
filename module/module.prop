@@ -1,6 +1,6 @@
 id=mt6893-spatial-aosp
 name=MT6893 Spatial Audio AOSP
-version=v0.1.3-preview
-versionCode=13
+version=v0.1.4-preview
+versionCode=14
 author=xCaptaiN09
-description=Spatial Audio preview for the inspected RMX3031 Evolution X Android 17 build. Original Oplus headphone tuning, Android Spatializer controls and WebUI. Requires systemless mounting. Known playback issues: see README.
+description=Spatial Audio preview for RMX3031 Android 16 and 17 AOSP builds. Original Oplus headphone tuning, Android Spatializer controls and WebUI. Requires systemless mounting. Known playback issues: see README.

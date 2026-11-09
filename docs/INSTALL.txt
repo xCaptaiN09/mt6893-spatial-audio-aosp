@@ -1,4 +1,4 @@
-MT6893 Spatial Audio AOSP - v0.1.3-preview
+MT6893 Spatial Audio AOSP - v0.1.4-preview
 Maintainer: xCaptaiN09
 
 Experimental preview for the inspected Realme X7 Max RMX3031 Evolution X

@@ -2,7 +2,7 @@
 
 Original Oplus headphone tuning, Android Spatializer controls and a local WebUI.
 
-**v0.1.3-preview · RMX3031 · Evolution X Android 17 12.3**
+**v0.1.4-preview · RMX3031 · Evolution X Android 17 12.3**
 By [xCaptaiN09](https://github.com/xCaptaiN09)
 
 This is an experimental compatibility port for the inspected **Realme X7 Max
@@ -54,7 +54,7 @@ Magisk and other root/mount combinations are not claimed tested here.
 
 ## Install
 
-1. Download **`MT6893-Spatial-Audio-AOSP-v0.1.3-preview.zip`** from
+1. Download **`MT6893-Spatial-Audio-AOSP-v0.1.4-preview.zip`** from
    [Releases](https://github.com/xCaptaiN09/mt6893-spatial-audio-aosp/releases).
 2. Keep the working mounting provider enabled. Install the module ZIP through
    your root manager and **reboot**.

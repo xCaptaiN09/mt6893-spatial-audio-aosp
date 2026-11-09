@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.1.4-preview — Android 16/17 AOSP installer compatibility
+
+- Added Android 16 (SDK 36) support alongside Android 17 (SDK 37) in the installer guard.
+- Expanded MT6893 / RMX3031 platform detection across fallback system/vendor properties and HAL presence for ROMs such as LineageOS that leave `ro.board.platform` empty.
+- Logged audio service ELF class and active audio policy early during installation, and relaxed base vendor hash mismatches to non-fatal notices so other RMX3031 Android 16/17 AOSP ROMs can install cleanly.
+- Live audio payload, native adapter, Android helpers, headphone tuning and WebUI remain unchanged from `v0.1.3-preview`.
+
 ## v0.1.3-preview — first public preview
 
 - Ported the Oplus Spatializer integration to the inspected RMX3031 Evolution X
