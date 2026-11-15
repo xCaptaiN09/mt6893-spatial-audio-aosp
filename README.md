@@ -9,6 +9,12 @@ This is an experimental compatibility port for the inspected **Realme X7 Max
 (RMX3031 / MT6893)** audio build. Spatial playback is audible on the test phone,
 but two playback issues remain open. It is **not a universal AOSP release**.
 
+## WebUI
+
+<p align="center">
+  <a href="docs/screenshots/spatial-audio-webui.png"><img src="docs/screenshots/spatial-audio-webui.png" alt="Spatial Audio WebUI with USB headphones connected and Spatial Audio enabled" width="360"></a>
+</p>
+
 ## What is included
 
 - Oplus Spatializer engine with the original v0.6 headphone profiles.
